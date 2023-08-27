@@ -13,7 +13,7 @@ select * from people;
 select * from products;
 select * from geo;
 
--- Analazing Sales:
+-- Analyzing Sales:
 select * from Sales;
 
 -- Totals:
@@ -122,7 +122,7 @@ from Geo
 join Sales on Sales.GeoId = Geo.Geoid 
 group by Geo.Geo;
 
--- Total Boxes And Total Sales On Diffrent Region
+-- Total Boxes And Total Sales On Different Regions
 Select 
 Geo.Region,
 Sum(Boxes) as TotalBoxes,
